@@ -11,7 +11,7 @@ export default function Navbar(){
         <nav>
             <div className="nav__header">
                 <div className="nav__logo">
-                    <img src="./images/nav_logo.png" alt="navbar__logo" />
+                    <img src="./images/nav_logo.webp" alt="nav__logo" />
                 </div>
                 <div className="menu__btn" onClick={handleOpenNav}>
                     <i class="ri-menu-line"></i>
