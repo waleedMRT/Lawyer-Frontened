@@ -13,11 +13,8 @@ export default function Contact() {
     e.preventDefault(); 
     setIsSubmitting(true);
     setStatusMessage("");
-    const SERVICE_ID = "service_eqvqywf";
-    const TEMPLATE_ID = "template_gvn32bg";
-    const PUBLIC_KEY = "xyWbUci-PRCLE-KeC";
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+    emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY).then(
       (result) => {
         setIsSubmitting(false);
         setStatusType("success");
