@@ -46,10 +46,10 @@ export default function Home() {
               واسترداد حقوقك بأعلى كفاءة وأسرع وقت ممكن.
             </p>
             <div className="hero__btns">
-              <Link to="appointments">
+              <Link to="/appointement">
                 <button className="hero__btn1">طلب استشارة</button>
               </Link>
-              <Link to="articles">
+              <Link to="/articles">
                 <button className="hero__btn2"> المقالات </button>
               </Link>
             </div>
